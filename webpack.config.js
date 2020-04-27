@@ -17,6 +17,14 @@ module.exports = {
                 use: ['style-loader', 'css-loader']
             },
             {
+                test: /\.less/,
+                use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.(jpg|png|bmp|jpeg)$/,
+                use: 'url-loader'
+            },
+            {
                 test: /\.(otf|eot|svg|ttf|woff|woff2)$/,
                 use: 'url-loader'
             },
